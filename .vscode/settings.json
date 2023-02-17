@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "grade 12/chapt3/DanceStudio.jar"
+    ]
+}
