@@ -51,8 +51,12 @@ public class Walker
   // Stops this walker (brings its feet together)
   public void stop()
   {
-	  firstStep();
+    if (stepsCount % 2 == 0)  // if stepsCount is even
+      leftFoot.moveForward(1 * stepLength);
+    else
+      rightFoot.moveForward(1 * stepLength);
 
+    stepsCount++;  // increment by 1
   }
 
   // Returns the distance walked

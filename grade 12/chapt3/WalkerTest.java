@@ -54,9 +54,8 @@ public class WalkerTest extends JPanel
       bobertta.draw(g);
       bobertta.firstStep();
       bobertta.nextStep();
-      bobertta.firstStep();
       bobertta.nextStep();
-      bobertta.firstStep();
+      bobertta.nextStep();
       bobertta.stop();
       bobertta.draw(g);
 
