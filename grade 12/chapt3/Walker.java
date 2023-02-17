@@ -51,7 +51,6 @@ public class Walker
   // Stops this walker (brings its feet together)
   public void stop()
   {
-
 	  firstStep();
 
   }
