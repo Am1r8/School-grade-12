@@ -5,9 +5,10 @@ public class FirstSteps
     DanceFloor danceFloor = new DanceFloor();
 
     StudentGroup students = new WalkingGroup(danceFloor);
-    // Or: 
+    // Or:
     //    StudentGroup students = new PacingGroup(danceFloor);
 
     new DanceLesson(students, danceFloor);
   }
 }
+// use relative or absolute paths to make the sound work.
