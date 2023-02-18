@@ -59,7 +59,7 @@ public class PacingGroup implements StudentGroup
       amy.firstStep();
       ben.firstStep();
       currentState = State.MOVING;
-      stepsCount = 0;
+      stepsCount = 0
     }
     else if (currentState == State.MOVING)
     {
