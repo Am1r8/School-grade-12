@@ -6,12 +6,12 @@ import java.text.DecimalFormat;
 public class Wages extends JFrame
     implements ActionListener
 {
-  private JTextField inputHours, inputRate, display;
-  private DecimalFormat money = new DecimalFormat("$0.00");
+private JTextField inputHours, inputRate, display;
+private DecimalFormat money = new DecimalFormat("$0.00");
 
-  // Constructor to create and set up the GUI components
-  public Wages()
-  {
+// Constructor to create and set up the GUI components
+public Wages()
+{
     super("Wages Calculator");
 
     // Create a panel with a grid layout
@@ -45,11 +45,11 @@ public class Wages extends JFrame
     Container c = getContentPane();
     c.add(panel, BorderLayout.CENTER);
     c.add(calc, BorderLayout.SOUTH);
-  }
+}
 
-  // Method to calculate the total wages
-  public double totalWages(double hours, double rate)
-  {
+// Method to calculate the total wages
+public double totalWages(double hours, double rate)
+{
     double wages;
 
     // Calculate wages for hours worked
@@ -60,11 +60,11 @@ public class Wages extends JFrame
     }
 
     return wages;
-  }
+}
 
-  // Action listener method for the calculate button
-  public void actionPerformed(ActionEvent e)
-  {
+// Action listener method for the calculate button
+public void actionPerformed(ActionEvent e)
+{
     // Get input values and calculate total wages
     String s = inputHours.getText();
     double hours = Double.parseDouble(s);
@@ -74,14 +74,14 @@ public class Wages extends JFrame
 
     // Display the total wages in the text field
     display.setText(money.format(wages));
-  }
+}
 
-  // Main method to create and display the GUI window
-  public static void main(String[] args)
-  {
+// Main method to create and display the GUI window
+public static void main(String[] args)
+{
     Wages window = new Wages();
     window.setBounds(300, 300, 200, 150);
     window.setDefaultCloseOperation(EXIT_ON_CLOSE);
     window.setVisible(true);
-  }
+}
 }
